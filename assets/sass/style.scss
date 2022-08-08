@@ -100,11 +100,28 @@
 /*=====================================================*/
 /*                    Header                         */
 /*=====================================================*/
-
+// Background Gradient: Left to Right
+@mixin bg-gradient-l2r($start-colour, $end-colour) {
+  // background-color: $start-colour;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from($start-colour),
+    to($end-colour)
+  );
+  background-image: -webkit-linear-gradient(left, $start-colour, $end-colour);
+  background-image: -moz-linear-gradient(left, $start-colour, $end-colour);
+  background-image: -ms-linear-gradient(left, $start-colour, $end-colour);
+  background-image: -o-linear-gradient(left, $start-colour, $end-colour);
+  background-image: linear-gradient(left, $start-colour, $end-colour);
+  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
+}
 .header {
   width: 100%;
   height: auto;
   overflow: hidden;
+  position: relative;
 
   &__content {
     background-position: center;
@@ -115,6 +132,18 @@
     transition: background-size 7s ease, opacity 1500ms ease-in !important;
     // animation: backgroundAnimation 7s ease-in-out infinite;
     transform: scale(1) !important;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      // background: rgba($color: #000000, $alpha: 0.5);
+      @include bg-gradient-l2r(rgba(#000000, 0.8), transparent);
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+    }
   }
 
   // height: 100vh;
@@ -134,11 +163,14 @@
   &__left-part {
     display: flex;
     justify-content: center;
-    align-items: center;
-    // flex-direction: column;
-    text-align: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
     align-self: stretch;
-    padding: 30rem 0;
+    // padding: 28rem 6rem 20rem;
+
+    height: 100vh;
+    z-index: 3;
 
     @media only screen and (max-width: $bp-992) {
       height: auto;
@@ -178,13 +210,14 @@
 
   &__title {
     color: #fff;
-    letter-spacing: 15px;
+    letter-spacing: 1px;
     margin-bottom: 1.5rem;
-    font-size: 4rem;
-    font-weight: 300;
+    font-size: 5rem;
+    font-weight: 500;
     line-height: 1.2;
     max-width: 80rem;
-    z-index: 1;
+    z-index: 3;
+    text-transform: uppercase;
 
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 3.6rem;
@@ -192,15 +225,14 @@
   }
 
   &__sub-title {
-    font-size: 1.8rem;
+    font-size: 2rem;
     line-height: 1.8;
-    letter-spacing: 0px;
+    // letter-spacing: 0px;
     opacity: 1;
     margin-bottom: 2rem;
     color: #fff;
-    font-weight: 400;
-    z-index: 1;
-
+    font-weight: 500;
+    z-index: 3;
     max-width: 55rem;
   }
 }
