@@ -3,6 +3,7 @@
 
 // <link href="//db.onlinewebfonts.com/c/c5b42bdc61979d10e93976872a805010?family=Space+Colony" rel="stylesheet" type="text/css"/>
 @import "base";
+@import "mixin";
 @import "navbar";
 
 /*=====================================================*/
@@ -101,23 +102,6 @@
 /*=====================================================*/
 /*                    Header                         */
 /*=====================================================*/
-// Background Gradient: Left to Right
-@mixin bg-gradient-l2r($start-colour, $end-colour) {
-  // background-color: $start-colour;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    right top,
-    from($start-colour),
-    to($end-colour)
-  );
-  background-image: -webkit-linear-gradient(left, $start-colour, $end-colour);
-  background-image: -moz-linear-gradient(left, $start-colour, $end-colour);
-  background-image: -ms-linear-gradient(left, $start-colour, $end-colour);
-  background-image: -o-linear-gradient(left, $start-colour, $end-colour);
-  background-image: linear-gradient(left, $start-colour, $end-colour);
-  filter: progid:DXImageTransform.Microsoft.gradient(start-colourStr='#{$start-colour}', end-colourStr='#{$end-colour}', gradientType='1');
-}
 .header {
   width: 100%;
   height: auto;
@@ -250,6 +234,7 @@
     transform: translateY(100px);
     transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
       background 500ms ease;
+    margin-top: 3rem;
   }
 }
 
@@ -1012,6 +997,7 @@ main {
     justify-content: space-between;
     gap: 3rem;
     z-index: 2;
+    display: none;
   }
 
   &__links {
