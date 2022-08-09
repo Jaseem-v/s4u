@@ -108,6 +108,14 @@
   overflow: hidden;
   position: relative;
 
+  &:hover {
+    .swiper-button-next,
+    .swiper-button-prev {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &__content {
     background-position: center;
     background-size: cover;
@@ -152,7 +160,7 @@
     flex-direction: column;
     text-align: start;
     align-self: stretch;
-    padding: 28rem 0rem 20rem;
+    padding: 28rem 3rem 20rem;
 
     // height: 100vh;
     z-index: 3;

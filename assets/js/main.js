@@ -38,10 +38,10 @@ var headerswiper = new Swiper(".header__swiper", {
   // "type": "bullets",
   // "clickable": true
   // },
-  //   navigation: {
-  //     nextEl: "#main-slider__swiper-button-next",
-  //     prevEl: "#main-slider__swiper-button-prev",
-  //   },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
   autoplay: {
     delay: 5000,
   },
