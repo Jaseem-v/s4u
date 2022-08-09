@@ -167,9 +167,9 @@
     flex-direction: column;
     text-align: start;
     align-self: stretch;
-    // padding: 28rem 6rem 20rem;
+    padding: 28rem 0rem 20rem;
 
-    height: 100vh;
+    // height: 100vh;
     z-index: 3;
 
     @media only screen and (max-width: $bp-992) {
@@ -218,6 +218,10 @@
     max-width: 80rem;
     z-index: 3;
     text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-120px);
+    transition: transform 2000ms ease, opacity 2000ms ease;
 
     @media only screen and (max-width: $bp-xsmall) {
       font-size: 3.6rem;
@@ -234,13 +238,34 @@
     font-weight: 500;
     z-index: 3;
     max-width: 55rem;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-120px);
+    transition: transform 2000ms ease, opacity 2000ms ease;
+  }
+
+  &__btn {
+    transform: translateY(100px);
+    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease,
+      background 500ms ease;
   }
 }
 
 .swiper-slide-active {
-  .header__content {
-    background-size: 150% !important;
-    transition: background-size 7s ease, opacity 1500ms ease-in !important;
+  .header {
+    &__content {
+      // background-size: 150% !important;
+      transition: background-size 7s ease, opacity 1500ms ease-in !important;
+    }
+
+    &__title,
+    &__sub-title,
+    &__btn {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0) translateX(0);
+    }
   }
 }
 
