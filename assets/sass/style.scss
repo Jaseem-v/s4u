@@ -117,14 +117,8 @@
   }
 
   &__content {
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
     position: relative;
     height: 100%;
-    transition: background-size 7s ease, opacity 1500ms ease-in !important;
-    // animation: backgroundAnimation 7s ease-in-out infinite;
-    transform: scale(1) !important;
 
     &::before {
       content: "";
@@ -137,6 +131,19 @@
       left: 0;
       z-index: 2;
     }
+  }
+
+  &__image_layer {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 7s ease, opacity 1500ms ease-in !important;
+    transform: scale(1) !important;
   }
 
   // height: 100vh;
@@ -160,16 +167,19 @@
     flex-direction: column;
     text-align: start;
     align-self: stretch;
-    padding: 28rem 3rem 20rem;
-
+    padding:  0rem ;
+    // transition: transform 0.5s ease;
     // height: 100vh;
     z-index: 3;
+    height: 60rem;
 
     @media only screen and (max-width: $bp-992) {
       height: auto;
       padding: 12rem 3rem;
       text-align: center;
       align-items: center;
+      padding: 0;
+      height: 50rem;
     }
 
     @media only screen and (max-width: $bp-xsmall) {
@@ -249,9 +259,8 @@
 
 .swiper-slide-active {
   .header {
-    &__content {
-      background-size: 115% !important;
-      transition: background-size 7s ease, opacity 1500ms ease-in !important;
+    &__image_layer {
+      transform: scale(1.15) !important;
     }
 
     &__title,

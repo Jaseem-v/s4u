@@ -137,37 +137,37 @@ $(document).ready(function () {
 //////////////////////////////////////////
 // enroll btn
 
-let enquireBtn = document.querySelectorAll(".enquiry-btn");
-let model = document.querySelector(".enroll");
-let modelContainer = document.querySelector(".enroll__container");
-let modelOverlay = document.querySelector(".enroll__overlay");
-let modelClose = document.querySelector(".model-close");
+// let enquireBtn = document.querySelectorAll(".enquiry-btn");
+// let model = document.querySelector(".enroll");
+// let modelContainer = document.querySelector(".enroll__container");
+// let modelOverlay = document.querySelector(".enroll__overlay");
+// let modelClose = document.querySelector(".model-close");
 
-function modelCloseFunction() {
-  document.body.classList.remove("remove-scrolling");
-  modelContainer.classList.remove("active");
-  setTimeout(() => {
-    modelOverlay.classList.remove("active");
-  }, 200);
-  setTimeout(() => {
-    model.classList.remove("active");
-  }, 500);
-}
+// function modelCloseFunction() {
+//   document.body.classList.remove("remove-scrolling");
+//   modelContainer.classList.remove("active");
+//   setTimeout(() => {
+//     modelOverlay.classList.remove("active");
+//   }, 200);
+//   setTimeout(() => {
+//     model.classList.remove("active");
+//   }, 500);
+// }
 
-modelClose.addEventListener("click", modelCloseFunction);
-modelOverlay.addEventListener("click", modelCloseFunction);
+// modelClose.addEventListener("click", modelCloseFunction);
+// modelOverlay.addEventListener("click", modelCloseFunction);
 
-enquireBtn.forEach((e) => {
-  e.addEventListener("click", () => {
-    document.body.classList.add("remove-scrolling");
-    model.classList.add("active");
-    modelOverlay.classList.add("active");
+// enquireBtn.forEach((e) => {
+//   e.addEventListener("click", () => {
+//     document.body.classList.add("remove-scrolling");
+//     model.classList.add("active");
+//     modelOverlay.classList.add("active");
 
-    setTimeout(() => {
-      modelContainer.classList.add("active");
-    }, 200);
-  });
-});
+//     setTimeout(() => {
+//       modelContainer.classList.add("active");
+//     }, 200);
+//   });
+// });
 
 /////////////////////////////////////
 // Hamburg menu
@@ -284,3 +284,49 @@ $(".projects__btn").magnificPopup({
 //         projectInfo.style.bottom = "-6rem"
 //     })
 // })
+
+////////////////////////
+//
+
+// const header__left = document.querySelectorAll(".header__left-part");
+// const header = document.querySelector("header");
+
+// header__left.forEach((el) => {
+//   el.style.transform = "translateX(0rem)";
+// });
+// header.addEventListener("mouseenter", () => {
+//   header__left.forEach((el) => {
+//     el.style.transform = "translateX(3rem)";
+//   });
+//   // header__left.style.transform = "28rem 3rem 20rem";
+// });
+// header.addEventListener("mouseout", () => {
+//   console.log("mouseout");
+//   header__left.forEach((el) => {
+//     el.style.transform = "translateX(0rem)";
+//   });
+// });
+
+function getMobileOperatingSystem() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  // Windows Phone must come first because its UA also contains "Android"
+  if (/windows phone/i.test(userAgent)) {
+    return "Windows Phone";
+  }
+
+  if (/android/i.test(userAgent)) {
+    return "Android";
+  }
+
+  // iOS detection from: http://stackoverflow.com/a/9039885/177710
+  if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+    return "iOS";
+  }
+
+  return "unknown";
+}
+
+document.querySelectorAll(".header__sub-title").forEach((el) => {
+  el.textContent = getMobileOperatingSystem();
+});
