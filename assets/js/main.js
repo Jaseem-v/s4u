@@ -15,12 +15,12 @@ var swiper = new Swiper(".mySwiper", {
       spaceBetween: 40,
     },
     990: {
-      slidesPerView: 4,
-      spaceBetween: 60,
+      slidesPerView: 5,
+      spaceBetween: 50,
     },
     1400: {
-      slidesPerView: 4,
-      spaceBetween: 60,
+      slidesPerView: 5,
+      spaceBetween: 50,
     },
   },
   autoplay: {
