@@ -795,7 +795,7 @@
 
   &__title {
     font-weight: 600;
-    text-transform: uppercase;
+    text-transform: capitalize;
     line-height: 26px;
     font-size: $subtitle-size;
     color: #666b70;
