@@ -133,6 +133,10 @@
     left: 0;
     transition: transform 7s ease, opacity 1500ms ease-in !important;
     transform: scale(1) !important;
+
+    @media only screen and (min-width: $bp-xlarge) {
+      background-position: center;
+    }
   }
 
   // height: 100vh;
