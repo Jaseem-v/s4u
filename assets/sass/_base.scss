@@ -111,6 +111,7 @@ html {
   text-align: center;
   overflow: hidden;
   cursor: pointer;
+  border-radius: 6px;
 
   span {
     position: absolute;
@@ -194,7 +195,7 @@ html {
   &--nav {
     text-transform: uppercase;
 
-    &-white{
+    &-white {
       background: #fff;
       color: #131313;
     }
@@ -560,6 +561,7 @@ html {
   }
 
   &__link {
+
     &:link,
     &:visited {
       font-size: 2rem;

@@ -761,8 +761,9 @@
   }
 
   &__img {
-    width: 80%;
+    width: 100%;
     border-radius: 0;
+    padding: 2rem;
     // filter: grayscale(100%);
 
     @media only screen and (max-height: $bp-xsmall) {
