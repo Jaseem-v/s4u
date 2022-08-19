@@ -158,8 +158,8 @@
     // transition: transform 0.5s ease;
     // height: 100vh;
     z-index: 3;
-    height: 60rem;
-    position: relative;
+    height: 70rem;
+    // position: relative;
 
     // height: 10rem;
 
@@ -208,7 +208,7 @@
       z-index: 4;
       padding: 2rem 0rem 2rem 10rem;
       bottom: 10rem;
-      left: -5rem;
+      left: 0rem;
       display: block;
       width: 40%;
 
@@ -288,14 +288,13 @@
 }
 
 .container {
-  max-width: 93% !important;
 
   @media screen and (orientation: landscape) and (min-device-width: 320px) and (max-device-width: 450px) {
     max-width: 608px;
   }
 
   @media only screen and (min-width: $bp-xlarge) {
-    max-width: 132rem;
+    max-width: 80% !important;
   }
 }
 
@@ -756,7 +755,7 @@
   &__img {
     width: 80%;
     border-radius: 0;
-    filter: grayscale(100%);
+    // filter: grayscale(100%);
 
     @media only screen and (max-height: $bp-xsmall) {
       height: 100%;
