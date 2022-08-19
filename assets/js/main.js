@@ -47,29 +47,6 @@ var headerswiper = new Swiper(".header__swiper", {
   },
 });
 
-//////////////////
-
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 10,
-  dots: false,
-  nav: true,
-  mouseDrag: false,
-  autoplay: true,
-  animateOut: "fadeOut",
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 1,
-    },
-  },
-});
-
 ////////////////////////
 
 $("input").focus(function () {
@@ -307,26 +284,28 @@ $(".projects__btn").magnificPopup({
 //   });
 // });
 
+
+
+// // <script src="main.js"></script>
+
+// const a_tag = document.querySelector("#sms")
+
 // function getMobileOperatingSystem() {
 //   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-//   // Windows Phone must come first because its UA also contains "Android"
-//   if (/windows phone/i.test(userAgent)) {
-//     return "Windows Phone";
-//   }
 
 //   if (/android/i.test(userAgent)) {
-//     return "Android";
+//     a_tag.href = "sms://+919072374704?body=hello%20how%20are%20you"
+
 //   }
 
 //   // iOS detection from: http://stackoverflow.com/a/9039885/177710
 //   if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-//     return "iOS";
+//     a_tag.href = "sms://+919072374704;?&body=hello%20how%20are%20you"
 //   }
 
-//   return "unknown";
 // }
 
-// document.querySelectorAll(".header__sub-title").forEach((el) => {
-//   el.textContent = getMobileOperatingSystem();
-// });
+// getMobileOperatingSystem();
+// console.log(a_tag.getAttribute("href"));
+

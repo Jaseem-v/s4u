@@ -193,6 +193,11 @@ html {
 
   &--nav {
     text-transform: uppercase;
+
+    &-white{
+      background: #fff;
+      color: #131313;
+    }
   }
 
   @media only screen and (max-width: $bp-992) {
@@ -421,7 +426,7 @@ html {
   background-repeat: no-repeat;
   position: relative;
   z-index: 0;
-  padding: 4rem 0;
+  // padding: 4rem 0;
   margin-bottom: 0;
 
   &::before {
@@ -453,32 +458,32 @@ html {
 // }
 .owl-item {
   &.active {
-    h1 {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      animation-name: fadeInDown;
-      animation-delay: 0.3s;
-    }
+    // h1 {
+    //   -webkit-animation-duration: 1s;
+    //   animation-duration: 1s;
+    //   -webkit-animation-fill-mode: both;
+    //   animation-fill-mode: both;
+    //   animation-name: fadeInDown;
+    //   animation-delay: 0.3s;
+    // }
 
-    p {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      animation-name: fadeInDown;
-      animation-delay: 0.3s;
-    }
+    // p {
+    //   -webkit-animation-duration: 1s;
+    //   animation-duration: 1s;
+    //   -webkit-animation-fill-mode: both;
+    //   animation-fill-mode: both;
+    //   animation-name: fadeInDown;
+    //   animation-delay: 0.3s;
+    // }
 
-    .btn {
-      -webkit-animation-duration: 1s;
-      animation-duration: 1s;
-      -webkit-animation-fill-mode: both;
-      animation-fill-mode: both;
-      animation-name: fadeInUp;
-      animation-delay: 0.3s;
-    }
+    // .btn {
+    //   -webkit-animation-duration: 1s;
+    //   animation-duration: 1s;
+    //   -webkit-animation-fill-mode: both;
+    //   animation-fill-mode: both;
+    //   animation-name: fadeInUp;
+    //   animation-delay: 0.3s;
+    // }
   }
 }
 
