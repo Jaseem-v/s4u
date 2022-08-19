@@ -719,6 +719,16 @@
     font-size: 1.2rem;
     margin-top: 1rem;
   }
+
+  &--amnities{
+    text-align: center;
+
+    .services{
+      &__title{
+        font-size: 1.2rem;
+      }
+    }
+  }
 }
 
 ////////////////////////////////////////
@@ -726,7 +736,7 @@
 ///
 
 .clients {
-  background: #f7f7f7;
+  // background: #f7f7f7;
 }
 
 .partners {
