@@ -679,7 +679,7 @@
 
 
   &__single-item {
-    padding: 3rem;
+    padding: 2rem;
     background-color: #fff;
     z-index: 2;
     border-radius: 7px;
@@ -710,20 +710,20 @@
   &__img {
     width: 3.5rem;
     // height: 4rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     // min-height: 8rem;
   }
 
   &__title {
-    font-size: 1.5rem;
+    font-size: $subtitle-size;
     // color: #34322d;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 1rem;
     text-transform: capitalize;
   }
 
   &__description {
-    font-size: 1.2rem;
+    font-size: $pargraph-size;
     margin-top: 1rem;
   }
 
@@ -797,13 +797,13 @@
     font-weight: 500;
     text-transform: uppercase;
     line-height: 26px;
-    font-size: 1.5rem;
+    font-size: $subtitle-size;
     color: #666b70;
   }
 
   &__details {
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: $pargraph-size;
     line-height: 25px;
     font-weight: 400;
     letter-spacing: 1px;
