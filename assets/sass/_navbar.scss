@@ -14,16 +14,61 @@
   transition: all 0.4s;
   z-index: 3;
 
+  &.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 30;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    background-color: $black-color  !important;
+    -webkit-animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
+    -moz-animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
+    animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
+
+    -webkit-animation: headerSlideDown 0.5s ease forwards;
+    animation: headerSlideDown 0.5s ease forwards;
+
+    .navigation {
+      &__link {
+        color: #fff;
+      }
+
+      &__logo {
+        &--2 {
+          display: inline-block;
+        }
+
+        &--1 {
+          display: none;
+        }
+
+        img {
+          width: 15rem;
+        }
+      }
+
+      &__content {
+        padding: 1.8rem 0;
+      }
+    }
+
+    .btn--nav{
+      background: #fff;
+      color: $black-color;
+    }
+  }
+
   &--black {
     position: relative;
-    background: #131313 !important;
+    background: $black-color  !important;
 
     .navigation {
       &__content {
         padding: 1.8rem 0 1.8rem;
       }
 
-      &__link{
+      &__link {
         color: #fff;
       }
     }
@@ -164,17 +209,9 @@
   &__link {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #131313;
+    color: $black-color;
     text-transform: uppercase;
 
-    // &:hover {
-    //   color: #82b440;
-    // }
-
-    // &.active {
-    //   color: #82b440;
-    //   font-weight: 500;
-    // }
 
     @media only screen and (max-width: $bp-992) {
       font-size: 1.9rem;
@@ -249,54 +286,7 @@
     }
   }
 
-  &.sticky {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 30;
-    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
-    background-color: #fff !important;
-    -webkit-animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
-    -moz-animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
-    animation: fadeInDown 0.5s ease-in-out 0s 1 normal none running;
 
-    -webkit-animation: headerSlideDown 0.5s ease forwards;
-    animation: headerSlideDown 0.5s ease forwards;
-
-    .navigation {
-      &__link {
-        color: #30384e;
-
-        &:hover {
-          color: #82b440;
-        }
-
-        &.active {
-          color: #82b440;
-          // font-weight: 500;
-        }
-      }
-
-      &__logo {
-        &--2 {
-          display: inline-block;
-        }
-
-        &--1 {
-          display: none;
-        }
-
-        img {
-          width: 15rem;
-        }
-      }
-
-      &__content {
-        padding: 1.8rem 0;
-      }
-    }
-  }
 }
 
 .hidden {

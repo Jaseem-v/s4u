@@ -23,11 +23,19 @@ ol {
   margin: 0;
 }
 
+// variable
+
+$pargraph-size : 1.3rem;
+$subtitle-size : 1.6rem;
+$black-color : #242423;
+
+// variable
+
 body {
   // font-family: "Jost", sans-serif;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  color: #383838;
+  color: $black-color;
   // overflow: hidden;
 }
 
@@ -44,8 +52,6 @@ main {
   --responsive-font: 1.83rem;
 }
 
-$pargraph-size : 1.3rem;
-$subtitle-size : 1.6rem;
 
 /* ---------const------------*/
 
@@ -97,7 +103,7 @@ html {
 
 .btn {
   // background:   #82b440;
-  background: #383838;
+  background: $black-color;
   // box-shadow: 0px 7px 10px #58bdff3d;
   border-radius: 0px;
   font-size: 1.2rem;
@@ -200,7 +206,7 @@ html {
 
     &-white {
       background: #fff;
-      color: #131313;
+      color: $black-color;
     }
   }
 
@@ -597,10 +603,10 @@ html {
 .swiper-button-prev {
   border-radius: 100%;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px -1px !important;
-  border: 1px solid #383838 !important;
+  border: 1px solid $black-color  !important;
   height: 30px !important;
   width: 30px !important;
-  background: #383838;
+  background: $black-color;
   opacity: 0;
   visibility: hidden;
   transition: all 0.4s;

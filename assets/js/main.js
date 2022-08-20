@@ -1,10 +1,6 @@
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 2,
   spaceBetween: 30,
-  // pagination: {
-  //     el: ".swiper-pagination",
-  //     clickable: true,
-  // },
   breakpoints: {
     640: {
       slidesPerView: 2,
@@ -33,11 +29,6 @@ var headerswiper = new Swiper(".header__swiper", {
   slidesPerView: 1,
   loop: true,
   effect: "fade",
-  // pagination: {
-  // "el": "#main-slider-pagination",
-  // "type": "bullets",
-  // "clickable": true
-  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -63,15 +54,13 @@ $("input").focus(function () {
 ///////////////////////////////////////
 // Navbar scroll
 
-// $(window).on('scroll', function () {
-//     if ($(window).scrollTop() > 200) {
-//         $('#navbar').addClass('sticky')
-//     } else {
-//         $('#navbar').removeClass('sticky')
-
-//     }
-
-// });
+$(window).on('scroll', function () {
+  if ($(window).scrollTop() > 200) {
+    $('#navbar').addClass('sticky')
+  } else {
+    $('#navbar').removeClass('sticky')
+  }
+});
 
 /////////////////////////////////////////////////////
 // scroll
