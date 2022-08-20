@@ -648,7 +648,10 @@
 
 .services {
   position: relative;
-  background: #f7f7f7;
+
+  &--page {
+    background: #fff;
+  }
 
   &__section-inner {
     z-index: 1;
@@ -765,11 +768,13 @@
 
 .contact {
   padding-bottom: 0;
+  background: #f7f7f7;
 
 
   &--page {
     padding-bottom: 8rem;
     padding-top: 8rem;
+    background: #fff;
   }
 
   &--index {
@@ -900,7 +905,7 @@ main {
 // footer
 
 .footer {
-  background: #f7f7f7;
+  background: #fff;
 
   &--index {
     background: #fff;
@@ -1038,7 +1043,7 @@ main {
   }
 
   &::before {
-    background: #F7F7F7 !important;
+    background: #fff !important;
     opacity: 1;
   }
 
