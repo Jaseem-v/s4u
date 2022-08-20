@@ -599,6 +599,10 @@
     // padding: 2.5rem 1.5rem;
     margin-bottom: 2rem;
     bottom: 0 !important;
+
+    &--studio {
+      margin-bottom: 0rem;
+    }
   }
 
   // &__head-bar {
@@ -716,6 +720,7 @@
 
   &--amnities {
     text-align: center;
+    background: #fff;
 
     .services {
       &__title {
@@ -774,8 +779,13 @@
   &--page {
     padding-bottom: 8rem;
     padding-top: 8rem;
+    background: #f7f7f7;
+  }
+
+  &--main-page {
     background: #fff;
   }
+
 
   &--index {
     background: #f7f7f7;
@@ -855,7 +865,7 @@
 
     &--page {
       margin-top: 0rem;
-      margin-bottom: 8rem;
+      margin-bottom: 0rem;
     }
 
     &-item {
