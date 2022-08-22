@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2605" data-name="Rectangle 2605" width="101.607" height="73.252" fill="none" stroke="#707070" stroke-width="5"/>
+    </clipPath>
+    <clipPath id="clip-Rest_Area">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="Rest_Area" data-name="Rest Area" clip-path="url(#clip-Rest_Area)">
+    <g id="Group_6625" data-name="Group 6625" transform="translate(-0.766 13)">
+      <g id="Group_6539" data-name="Group 6539" transform="translate(-0.001)" clip-path="url(#clip-path)">
+        <path id="Path_1849" data-name="Path 1849" d="M1,52.986V67.163M48.258,38.808V10.453A9.453,9.453,0,0,1,57.71,1h18.9a9.453,9.453,0,0,1,9.453,9.453v9.453m-37.808,18.9V10.453A9.453,9.453,0,0,0,38.8,1H19.9a9.453,9.453,0,0,0-9.453,9.453v9.453" transform="translate(2.544 2.545)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+        <path id="Path_1850" data-name="Path 1850" d="M86.066,6.334a9.451,9.451,0,0,0-9.449,9.449v9.453H19.906V15.783A9.453,9.453,0,0,0,1,15.783V44.139H95.519V15.783A9.452,9.452,0,0,0,86.066,6.334Zm9.453,33.08V53.592" transform="translate(2.544 16.117)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"/>
+      </g>
+    </g>
+  </g>
+</svg>

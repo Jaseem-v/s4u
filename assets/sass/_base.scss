@@ -153,7 +153,9 @@ html {
     }
 
     &:hover {
-      color: #1cbcd8;
+      color: #fff;
+      background: $black-color;
+
 
       &::before {
         background: #1cbcd8;
@@ -162,7 +164,7 @@ html {
   }
 
   &:hover {
-    color: #000;
+    color: #fff;
 
     & span {
       width: 225%;

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-Wall_Mount_Fans">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="Wall_Mount_Fans" data-name="Wall Mount Fans" clip-path="url(#clip-Wall_Mount_Fans)">
+    <g id="Group_6627" data-name="Group 6627" transform="translate(1.325 0.492)">
+      <g id="Group_6626" data-name="Group 6626" transform="translate(-10.325 -10.325)">
+        <path id="Path_1862" data-name="Path 1862" d="M47.493,47.49a22.859,22.859,0,0,1,6.965-16.78,23.7,23.7,0,0,1,33.566,0,22.869,22.869,0,0,1,6.962,16.78ZM23.748,71.238A22.861,22.861,0,0,1,6.965,64.273,22.861,22.861,0,0,1,0,47.49H47.493a22.861,22.861,0,0,1-6.965,16.783,22.859,22.859,0,0,1-16.78,6.965M47.493,47.49A22.876,22.876,0,0,1,30.71,40.528a22.876,22.876,0,0,1-6.962-16.783A22.888,22.888,0,0,1,30.71,6.959,22.873,22.873,0,0,1,47.493,0Zm0,47.493V47.49a22.866,22.866,0,0,1,16.783,6.965,23.706,23.706,0,0,1,0,33.563,22.866,22.866,0,0,1-16.783,6.965" transform="translate(12 12.833)" fill="none" stroke="#000" stroke-width="4"/>
+      </g>
+    </g>
+  </g>
+</svg>

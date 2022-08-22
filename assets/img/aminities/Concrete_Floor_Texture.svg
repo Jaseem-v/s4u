@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-Concrete_Floor_Texture">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="Concrete_Floor_Texture" data-name="Concrete Floor Texture" clip-path="url(#clip-Concrete_Floor_Texture)">
+    <g id="Group_6623" data-name="Group 6623" transform="translate(-411.16 274.564)">
+      <g id="Rectangle_2600" data-name="Rectangle 2600" transform="translate(411.16 -274.564)" fill="none" stroke="#000" stroke-width="7">
+        <rect width="100" height="100" stroke="none"/>
+        <rect x="3.5" y="3.5" width="93" height="93" fill="none"/>
+      </g>
+      <line id="Line_1" data-name="Line 1" y2="92.579" transform="translate(462.238 -270.853)" fill="none" stroke="#000" stroke-width="7"/>
+      <line id="Line_2" data-name="Line 2" x1="87.278" transform="translate(417.623 -223.996)" fill="none" stroke="#000" stroke-width="7"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100" height="100" viewBox="0 0 100 100">
+  <defs>
+    <clipPath id="clip-_1350_Sq_Ft_Space">
+      <rect width="100" height="100"/>
+    </clipPath>
+  </defs>
+  <g id="_1350_Sq_Ft_Space" data-name="1350 Sq Ft Space" clip-path="url(#clip-_1350_Sq_Ft_Space)">
+    <g id="Rectangle_2599" data-name="Rectangle 2599" fill="none" stroke="#000" stroke-width="7">
+      <rect width="100" height="100" stroke="none"/>
+      <rect x="3.5" y="3.5" width="93" height="93" fill="none"/>
+    </g>
+  </g>
+</svg>
