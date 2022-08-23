@@ -34,6 +34,7 @@ $black-color : #242423;
 body {
   // font-family: "Jost", sans-serif;
   font-family: "Poppins", sans-serif;
+  font-family: 'nunito-sans', sans-serif;
   font-weight: 400;
   color: $black-color;
   // overflow: hidden;
@@ -108,9 +109,9 @@ html {
   border-radius: 0px;
   font-size: 1.2rem;
   color: #fff;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   text-transform: capitalize;
-  font-weight: 500;
+  font-weight: 600;
   letter-spacing: 0.3px;
   z-index: 1;
   transition: 0.5s;
@@ -164,7 +165,8 @@ html {
   }
 
   &:hover {
-    color: #fff;
+    color: $black-color;
+    background: rgba(#fff,0.9) !important;
 
     & span {
       width: 225%;
@@ -205,6 +207,7 @@ html {
 
   &--nav {
     text-transform: uppercase;
+    padding: 1rem 2rem;
 
     &-white {
       background: #fff;
